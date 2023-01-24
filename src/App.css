@@ -1,38 +1,80 @@
-.App {
+@font-face {
+  font-family: Montserrat;
+  src: url(public/fonts/Montserrat-Regular.ttf);
+}
+body{
+  background: rgb(116,69,185);
+  background: linear-gradient(145deg, rgba(116,69,185,1) 0%, rgba(0,212,255,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Montserrat;
+  color: #4b2b87;
+}
+#container{
+  height: 100%;
+  margin-bottom: 25px;
+}
+
+section{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  width: 50%;
+  padding-bottom: 1px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+h2{
+  padding-top: 20px;
+}
+
+input[type=text], input[type=number], input:focus{
+  height: 25px;
+  width: 150px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: Montserrat;
+}
+
+button{
+  border: none;
+  width: 155px;
+  height: 25px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: Montserrat;
+}
+
+.centered{
   text-align: center;
+  margin: auto;
+}
+#items-container{
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.5);
+  display: inline-flex;
+  flex-basis: 33.3333333%;
+  flex-wrap: wrap;
+  padding: auto;
+}
+.card{
+  box-shadow: 0px 0px 5px 1px rgba(182, 181, 247, 0.5);
+  display: block;
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  flex-grow: 1;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span#card{
+  font-weight: normal;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  margin-top: 20px;
+  height: 85px;
 }
